@@ -7,6 +7,9 @@
     <groupId>org.frere</groupId>
     <artifactId>login.oauth</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <spring.versions>3.2.1.RELEASE</spring.versions>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.apache.oltu.oauth2</groupId>
@@ -24,9 +27,21 @@
         <dependency> <!-- spring 3.2 -->
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>3.2.1.RELEASE</version>
+            <version>${spring.versions}</version>
             <type>jar</type>
         </dependency>
+
+        <dependency>
+              <groupId>org.springframework</groupId>
+              <artifactId>spring-web</artifactId>
+              <version>${spring.versions}</version>
+          </dependency>
+
+          <dependency>
+              <groupId>org.springframework</groupId>
+              <artifactId>spring-webmvc</artifactId>
+              <version>${spring.versions}</version>
+          </dependency>
 
         <dependency>
             <groupId>log4j</groupId>

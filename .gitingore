@@ -22,3 +22,5 @@
 
 
 #在.gitignore文件中使用的是标准的glob模式匹配（shell 所使用的简化了的正则表达式）
+.idea/
+.idea/*/
